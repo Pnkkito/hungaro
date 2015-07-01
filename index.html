@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+</head>
+<body>
+	
+	<br>
+	<h4 class="text-center">Test M&eacute;todo H&uacute;ngaro</h4>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 col-md-6 col-md-offset-3">
+				<hr>
+				<div class="row">
+ 					<div class="col-sm-12 col-md-3">
+						<span>Tama&ntilde;o de Matriz</span>
+						<input type="number" name="txt_matriz_size" id="txt_matriz_size" class="form-control input-sm">	
+					</div>
+					<div class="col-sm-12 col-md-3"> 
+						Operaci&oacute;n
+						<select name="slc_operation" id="slc_operation" class="form-control input-sm">
+							<option value="1">M&iacute;nimo</option>
+							<option value="0">M&aacute;ximo</option>
+						</select>
+					</div>
+					<div class="col-sm-12 col-md-3"> 
+						Autogenerar
+						<select name="slc_auto" id="slc_auto" class="form-control input-sm">
+							<option value="1">SI</option>
+							<option value="0">NO</option>
+						</select>
+					</div>
+					<div class="col-sm-12 col-md-3 text-right">
+						<br>
+						<button type="button" class="btn btn-primary btn-sm" id="btn_generar">Generar Matriz</button>
+					</div> 
+				</div>
+				<br>
+				<div class="row">
+					<div class="col-sm-12 col-md-12">
+						<table class="table table-bordered table-hovered" id="table_matriz"></table>
+					</div>
+				</div>
+				<p class="text-right">
+					<button type="button" class="btn btn-success btn-sm hidden" id="btn_calcular">Calcular Valores</button>
+				</p>
+				<div class="row hidden" id="div_process">
+					<div class="col-sm-12 col-md-12">
+						<strong>* Proceso</strong>
+ 						<div id="process_content"></div>
+ 					</div>  
+ 				</div>  
+ 				<div class="row">
+					<div class="col-sm-12 col-md-6">
+						<p class="text-center hidden" id="z_content">
+							El valor de <strong>Z</strong> es : <span id="z_result">20</span>
+						</p>
+					</div>
+				</div>
+				<br> 
+			</div>
+		</div> 
+	</div> 
+	
+	<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="assets/js/script.js"></script>
+</body>
+</html>
